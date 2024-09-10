@@ -24,3 +24,9 @@ const timeFunction = setInterval(() => {
   hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
   days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
 }, 1000);
+
+document.onkeydown = function(e) {
+  if (e.keyCode == 123) {
+    return false;
+  }
+};
